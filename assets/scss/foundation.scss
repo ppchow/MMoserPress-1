@@ -56,7 +56,8 @@
   Feel free to remove the import statement below if you don't plan to use icon-fonts in your project
 */
 
-@import "../components/fontawesome/scss/font-awesome.scss";
+/*@import "../components/fontawesome/scss/font-awesome.scss";*/
+/*@import "../fonts/icomoon/style.css";*/
 
 
 /*
@@ -70,3 +71,11 @@
 @import "site/front";
 @import "site/featured";
 @import "site/footer";
+
+@import "site/inc";
+@import "site/icomoon";
+@import "site/mmoser";
+@import "site/small";
+
+
+@import "site/additional";

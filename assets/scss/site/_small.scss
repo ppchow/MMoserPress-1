@@ -1,0 +1,447 @@
+/* Smartphones (portrait and landscape) ********************************************
+*                                                                                  *
+*                                                                                  *
+*                                                                                  *
+*                                                                                  *
+*                                                                                  *
+*                                                                                  *
+***********************************************************************************/
+
+@media only screen and (max-width: 40em) { 
+/* Styles */
+
+.home{
+  .pull-me {
+      top: -25px;
+  }
+}
+
+/*YALE*/    
+.tooltip {    
+  display: none !important;   
+}   
+#readright {    
+  position: relative;   
+  right: 0;   
+  top: 0;   
+}   
+span.lnk {    
+  font-size: 1rem;    
+  font-weight: normal;    
+}   
+.yale2 section h2.sub{    
+    font-size: 1rem;    
+}   
+.yale2 section h3.sub{    
+    font-size: 1rem;    
+}   
+.yale-nav {   
+  font-size: 1rem;    
+  line-height: 1;   
+}   
+.yale2 h3, div.text-right{    
+  text-align: left !important;    
+}   
+.yale2 .the-caption {   
+  background: transparent none repeat scroll 0 0 !important;    
+  color: $oil !important;    
+}
+/*PUMA mobile*/
+
+.vert-cent {
+  top: 20px !important;
+}
+
+.white-panel.chtwo {
+  background: transparent;
+}
+
+.white {
+  background: transparent;
+}
+
+.gray {
+  background: transparent;
+}
+
+.img-caption-box {
+  margin-top: 20px;
+}
+
+.inlet {
+  padding: 20px 0;
+}
+
+/*select-p*/
+
+.select-p .column, .select-p .columns, .page .pull-me.select-p{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.select-p section {
+  padding: 10px;
+}
+
+.select-p .row .row {
+  margin: 0;
+}
+
+
+.slick-next, .slick-prev {
+  height: 31px !important;
+  width: 25px !important;
+  top: 40% !important;;
+}
+
+.slick-prev::before, .slick-next::before {
+   font-size: 14px !important;
+}
+
+.the-caption, .captions {
+  font-size: 12px;
+  padding: 0;
+  position: relative;
+}
+
+.fifty-w {
+  width: 100%;
+}
+
+/*select-p*/
+
+li.hide-on-mobile {
+  display: none;
+}
+
+span.bx_caption {
+  display: none;
+}
+
+.rwd-line{
+  display: inline;
+}
+
+.imgleft {
+  width: 100%;
+}
+
+.contentright {
+  width: 100%;
+}
+
+/*home block*/
+
+.intro-cap h2 {
+  font-size: 16px;
+}
+
+.home-block, .home-grid-sizer, .home-block.w6 {
+  width: 100%;
+}
+
+.home-blocks .columns {
+  margin-bottom: 20px;
+}
+
+.home-blocks .row {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+/*for project gallery*/
+
+.content-slick .row{
+  margin: 0 -25px;
+  }
+
+.column-slick {
+    padding: 0;
+  }
+
+/*for map*/
+
+.readmore-js-toggle a.button.map {
+  left: 0;
+  position: relative;
+  top: 0;
+}
+
+.readmore-js-toggle a.button.alert.map {
+  left: 0;
+}
+
+#themap {
+  bottom: 0;
+}
+
+blockquote.left, blockquote.right {
+  width: 100%;
+}
+
+.i-dea.m-w2 {
+  width: 100%; /*makes tiles in the ideas library fit display*/
+}
+
+.i-dea{
+  height: auto;
+}
+
+.item .blurb p {
+  font-size: 0.75rem;
+}
+
+.item .blurb h2 {
+  font-size: 1.1rem;
+}
+
+.item.h3 { min-height: 230px; height: auto; }
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.item.services > img, .item.services img {
+  height: auto;
+}
+
+.filter > li {
+  padding: 5px 10px;
+}
+
+  blockquote, blockquote p {
+    font-size: 1rem;
+  }
+  
+  .breadcrumbs{
+    display: block;
+  }
+
+  .item:hover:not(.no-hover), .i-dea:hover{
+    opacity: 1;
+  }
+
+  .item{
+    width: 100% !important;
+  }
+
+  .item, .item.h2{
+    height: auto;
+  }
+
+  .item.g1{
+    height: auto;
+    min-height: 174px;
+  }
+
+  .item .blurb p.show-me{
+    display: block;
+  }
+
+  .item p{
+    display: none;
+  }
+
+  .item.g1 {
+    width: 100% !important;
+  }
+
+
+
+  .inline {
+    display: inline-block;
+    list-style: none outside none;
+  }
+
+  .inline-list a {
+    font-family: arial;
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  .left-pane {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-pane{
+    padding-left: 0;
+  }
+
+  .grid .pull-me {
+    padding-left: 0;
+  }
+
+  .page .pull-me {
+    padding-right: 10px;
+  }
+
+  .divider {
+    left: 0;
+  }
+
+  #header {
+    height: 125px;
+    margin-top: 47px;
+  }
+
+  #header .followlink {margin-top: 33px;}
+
+  .item{
+    width: 100% !important;
+  }
+
+  .item ul {
+    margin-left: 0;
+  }
+
+  .tabs-mm li {
+    left: 0;
+    top: 59px;
+    position: relative;
+  }
+
+  .logo img {
+    float: left;
+    margin: 0;
+    padding-top: 14px;
+    width: 332px;
+  }
+
+  .inline-list.social-links {
+    float: left;
+    padding-top: 0;
+    top: 10px; /*allow space for pages without tabs*/
+  }
+
+  .top-bar-section li:not(.has-form) a:not(.button){
+    padding: 0 0 6px;
+    text-align: left;
+  }
+
+
+  nav section li a i{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    width: auto;
+  }
+
+    .top-bar-section ul li a span{
+
+      margin-left: 9px;
+  }
+
+  #footer .right {
+    float: left !important;
+  }
+
+  p.copy{
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .breadcrumbs > *:before {
+    content: none;
+  }
+
+  .breadcrumbs > * {
+    line-height: 1.5;
+    float: none;
+  }
+
+  button.small, .button.small {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  ul.text-center, h3.text-center, p.text-center{
+    text-align: left !important;
+  }
+
+  /*TABS*/
+
+  .tabs-mm a.active {
+    background: none repeat scroll 0 0 $white-smoke;
+    color: $oil;
+    cursor: default;
+    padding: 0 !important;
+  }
+
+  .tabs-mm > li.right {
+    display: none;
+  }
+
+  .tabs-mm:not(.not) {
+    margin: 20px 0;
+  }
+
+  .tabs-mm {
+    border-bottom: none;
+    height: 0px;
+  }
+
+  .page .tabs-mm, .tabs-mm {
+    height: 20px;
+  }
+
+  .page-14 .tabs-mm, .page-15 .tabs-mm, .page-16 .tabs-mm, .page-17 .tabs-mm, .page-11 .tabs-mm, .page-18 .tabs-mm {
+    height: 105px;
+  } /*adjust tabs-mm for news, people news, and media on mobile*/
+
+  .tabs-mm > li {
+    top: 0;
+    display: block;
+  }
+
+  .tabs-mm a {
+    font-size: 1.5rem;
+    padding-left: 0;
+  }
+
+  .tabs-mm a.active {
+    padding-left: 15px;
+  }
+
+  .tabs-mm > li:not(:last-child):after {
+    font-size: 1.2rem;
+  }
+
+  .tabs dd > a, .tabs .tab-title > a {
+    font-size: 1rem;
+  }
+
+  .tabs {
+    position: relative;
+    top: 12px;
+  }
+
+  .tabs:not(.small) > li {
+    top: 40px;
+  }
+
+  .tabs dd > a, .tabs .tab-title > a {
+    padding: 6px 15px;
+  }
+
+  .tabs.small dd > a, .tabs.small .tab-title > a {
+    font-size: 0.75rem;
+  }
+  /*TABS*/
+
+
+.tab-bar{
+	.title{
+		span {
+			    float: none;
+			    display: inline-block;
+			    position: relative;
+			    bottom: 2px;
+			}
+		h1{
+			display: inline-block;
+		}
+	}
+}
+
+
+} /*end small*/

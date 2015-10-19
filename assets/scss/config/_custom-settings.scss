@@ -8,30 +8,51 @@ $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
+$oxygen: 'Oxygen', $font-family-sans-serif;
+
 // We use these to define default font weights
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
 
 // Foundation color naming conventions
-$white       : #FFFFFF;
-$ghost       : #FAFAFA;
-$snow        : #F9F9F9;
-$vapor       : #F6F6F6;
-$white-smoke : #F5F5F5;
-$silver      : #EFEFEF;
-$smoke       : #EEEEEE;
-$gainsboro   : #DDDDDD;
-$iron        : #CCCCCC;
 $base        : #AAAAAA;
-$aluminum    : #999999;
-$jumbo       : #888888;
-$monsoon     : #777777;
-$steel       : #666666;
-$charcoal    : #555555;
-$tuatara     : #444444;
-$oil         : #333333;
-$jet         : #222222;
 $black       : #000000;
+
+$white       : #FFFFFF;
+$ghost       : #f1f1f1;
+$orange      : #ff7211;
+$blue        : #008dee;
+$oil         : #323232;
+$jet         : #424242;
+$steel       : #626262;
+$vapor       : #6f6f6f;
+$snow        : #f2f2f2;
+$smoke       : #dedede;
+$white-smoke : #f6f6f6;
+$gainsboro   : #d5d5d5;
+$silver      : #e7e7e7;
+$aluminum    : #292929;
+$charcoal    : #545252;
+$tuatara     : #3d3d3d;
+$monsoon     : #5c4751;
+$jumbo       : #957484;
+$iron        : #dddddd;
+
+$itemwhite   : #ebe9ea;
+
+
+$lime        : #576A49;
+$fuel        : #78662d;
+$indigo      : #60315A;
+$charlie     : #AD724C;
+$dodger      : #376180;
+$rider       : #385959;
+$fire        : #a73d4f;
+$fuel        : #d3a102;
+
+
+
+
 
 // We use these as default colors throughout
 $primary-color: #008CBA;
@@ -69,3 +90,15 @@ $medium-breakpoint: em-calc(1024);
 $topbar-breakpoint: em-calc(820);
 $large-breakpoint:  em-calc(1440);
 $xlarge-breakpoint: em-calc(1920);
+
+
+.top-bar-section{
+	li.menu-item a {
+	    padding: 0 0 13px 0 !important;
+	}
+
+	li.active:not(.has-form) a:not(.button):hover {
+	    background: $orange !important;
+	    color: $white !important;
+	}
+}

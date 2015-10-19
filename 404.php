@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * The template for displaying search results pages.
  *
  * @package WordPress
  * @subpackage FoundationPress
@@ -10,26 +10,21 @@
 get_header(); ?>
 
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+    <div class="large-12 columns">
+        <ul class="tabs-mm">
+          <li><a href="<?php echo get_permalink(); ?>" class="active">404</a></li>
+          <li class="right"> <a href="<?php echo get_site_url(); ?>">&larr; back home </a></li>
+        </ul>
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php _e( 'File Not Found', 'foundationpress' ); ?></h1>
-			</header>
-			<div class="entry-content">
-				<div class="error">
-					<p class="bottom"><?php _e( 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'foundationpress' ); ?></p>
-				</div>
-				<p><?php _e( 'Please try the following:', 'foundationpress' ); ?></p>
-				<ul>
-					<li><?php _e( 'Check your spelling', 'foundationpress' ); ?></li>
-					<li><?php printf( __( 'Return to the <a href="%s">home page</a>', 'foundationpress' ), home_url() ); ?></li>
-					<li><?php _e( 'Click the <a href="javascript:history.back()">Back</a> button', 'foundationpress' ); ?></li>
-				</ul>
-			</div>
-		</article>
+        <div class="contentgal">
 
-	</div>
-	<?php get_sidebar(); ?>
+        	<h3>Sorry, we can’t find the page you’re looking for.</h3>
+
+        	<p>The file may have been moved or deleted. <br> <a title="M Moser Associates" href="<?php echo get_site_url(); ?>"><strong>Click here</strong></a> to head back to our homepage.</p>
+
+        </div>
+
+    </div>
 </div>
+
 <?php get_footer(); ?>
