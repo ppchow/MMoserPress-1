@@ -1202,7 +1202,7 @@ function my_post_gallery($output, $attr) {
     // Here's your actual output, you may customize it to your need
 	
     $output = "<div class=\"$content_class\">\n";
-    $output .= "<div class=\"slider multiple-items\">\n";
+    $output .= "<div class=\"slider slickMultipleNav\">\n";
 
     // Now you loop through each attachment
     foreach ($attachments as $id => $attachment) {
