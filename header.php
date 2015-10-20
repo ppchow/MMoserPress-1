@@ -86,14 +86,15 @@
 		        </div>
 		        <div class="medium-6 medium-pull-6 columns">
 		        	<ul class="followlink">
-		        		<li class="socialink">	
+		        		<!-- <li class="socialink">	
 		          			<?php dynamic_sidebar("header-sidebar-2");?> 
 		          		</li>
-		          		<li class="languagelink">
+		          		 <li class="languagelink">
 		          			<?php
 		          				dynamic_sidebar("header-sidebar-1");
 							 ?>
 						</li>
+						-->
 		          		<li class="sharelink">
 		          		<?php	
 		           		//$post_type = get_post_type(get_the_ID());
