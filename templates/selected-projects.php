@@ -20,7 +20,7 @@ if(pll_current_language()=="en"){
                 <ul class="tabs-mm">
                     <li><a class="active"><?php the_title(); ?></a></li>
                 </ul>
-                <div id="readmore" class="filterproject">
+                <!-- <div id="readmore" class="filterproject">
                     <div class="row" id="filters">
                       <div class="large-3 columns">
                         <?php
@@ -52,7 +52,7 @@ if(pll_current_language()=="en"){
                               ?>
                       </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="large-12 columns">
                         <?php 
@@ -83,10 +83,11 @@ if(pll_current_language()=="en"){
                                     <div class="item g1 <?php  echo $terms{0}->slug  ?>">
                                       <a href="<?php echo get_permalink() ?>" class="whole-div">
                                           <div class="blurb gradient">
-                                            <h5><?php echo the_title();?></h5>
+                                            <h6><?php echo $custom["sq_ft"][0]; echo (pll_current_language()=="en")?' sq-ft':''; ?></h6>
                                             <h4><?php echo $custom["subtitle"][0] ?></h4>
                                             <!--<h6><?php //echo $custom["sq_ft"][0] . ' sq-ft'; ?></h6>-->
-                                             <h6><?php echo $custom["sq_ft"][0]; echo (pll_current_language()=="en")?' sq-ft':''; ?></h6>
+                                            <h5><?php echo the_title();?></h5>
+                                             
                                           </div>
                                           <?php //echo get_the_post_thumbnail($my_query->ID);
                                             $image_url = wp_get_attachment_url( get_post_thumbnail_id($my_query->ID));
