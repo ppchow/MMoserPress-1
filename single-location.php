@@ -24,7 +24,7 @@ if(pll_current_language()=="en"){
 			<ul class="tabs-mm">
 
 	        	<li><a href="<?php echo get_permalink() ?>" class="active"><?php echo $global_location_text; ?></a></li>
-	        	<li class="right"> <a href="<?php echo get_site_url().$go_backlink; ?>">&larr; back</a></li>
+	        	<!-- <li class="right"> <a href="<?php echo get_site_url().$go_backlink; ?>">&larr; back</a></li> -->
 	        </ul>
 	        <?php
 			// Start the loop.

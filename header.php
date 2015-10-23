@@ -85,8 +85,14 @@
 		          <div class="logo"><a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mmoser-logo.png" alt="M Moser Associates" width="340" height="51"></a></div>
 		        </div>
 		        <div class="medium-6 medium-pull-6 columns">
-		        	<ul class="followlink">
-		        		<!-- <li class="socialink">	
+		        	<?php if(pll_current_language()=="cn"){ ?>
+		        	
+		        			<div class="cn-mainlink">
+		        			<a href="http://mmoser.com">Main website</a>
+		        			</div> 
+		        	<?php } ?>
+		        	<!--<ul class="followlink">
+		        		 <li class="socialink">	
 		          			<?php dynamic_sidebar("header-sidebar-2");?> 
 		          		</li>
 		          		 <li class="languagelink">
@@ -94,7 +100,7 @@
 		          				dynamic_sidebar("header-sidebar-1");
 							 ?>
 						</li>
-						-->
+						
 		          		<li class="sharelink">
 		          		<?php	
 		           		//$post_type = get_post_type(get_the_ID());
@@ -122,7 +128,7 @@
 						<?php }?>
 						</li>
 						
-					</ul>	
+					</ul>	-->
 		        </div>
 		      </div>
 		    </div>

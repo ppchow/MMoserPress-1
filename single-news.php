@@ -43,7 +43,8 @@ get_header(); ?>
 			        }
 			        ?>
 			          <li><a href="<?php echo get_site_url().'/'.$in_media_link; ?>"><?php echo $in_media ?></a></li>
-                      <li class="right"> <a href="<?php echo get_term_link($news_cat, 'news_category'); ?>">&larr; back</a></li>
+                     <!-- <li class="right"> <a href="<?php echo get_term_link($news_cat, 'news_category'); ?>">&larr; back</a></li> -->
+			        
 			        </ul>
 		        <?php
 			      }

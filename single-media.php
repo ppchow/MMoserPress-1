@@ -48,7 +48,7 @@ get_header(); ?>
 			        }
 			        ?>
 			          <li><a href="<?php echo get_bloginfo('url').'/in-the-media/' ?>" class="active"><?php echo $in_media; ?></a></li>
-			          <li class="right"> <a href="<?php echo get_site_url().'/in-the-media/'.$media_cat; ?>">← back </a></li>
+			         <!-- <li class="right"> <a href="<?php echo get_site_url().'/in-the-media/'.$media_cat; ?>">← back </a></li> -->
 			        </ul>
 			        <?php
 			      }

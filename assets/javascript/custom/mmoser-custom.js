@@ -186,8 +186,9 @@ $(document).ready(function(){
       closeClick  : false,
       openEffect  : 'none',
       closeEffect : 'none'
-    });
+    }).trigger('click');
 
+	
     // fancyboxScripts
     $(".fancydefault").fancybox({
     	helpers: {
@@ -201,7 +202,9 @@ $(document).ready(function(){
     	openEffect  : 'none',
     	closeEffect : 'none'
     });
-
+	
+	
+	
     //Yale YouTube Link
     $(".various").fancybox({
       helpers: {
@@ -321,7 +324,7 @@ $(document).ready(function(){
    // [[*id:is=`304`:then=`[[$slickMultiple]]`]]         New Item Srinivasa 
    $('.multiple-items').slick({
        autoplay: true,
-       arrows: false,
+       arrows: true,
        dots: false,
        infinite: true,
        speed: 800,

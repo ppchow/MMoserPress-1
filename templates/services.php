@@ -10,6 +10,7 @@ get_header();
                 <ul class="tabs-mm">
                   <li><a class="active"><?php echo the_title(); ?></a></li>
                   <li></li>
+                  
                 </ul>
                 <?php
                 $type = 'services';

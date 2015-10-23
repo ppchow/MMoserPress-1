@@ -7,7 +7,7 @@ if(pll_current_language()=="en"){
     $visitgallery_text = "Visit Gallery";
     
 }else{
-    $visitgallery_text = "游览图库";
+    $visitgallery_text = "浏览图片";
     
 }
 ?>

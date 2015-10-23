@@ -19,7 +19,7 @@ if(pll_current_language()=="en"){
     <div class="large-12 columns">
         <ul class="tabs-mm">
           <li><a href="<?php echo get_permalink(); ?>" class="active"><?php echo "Ideas Library" ?></a></li>
-          <li class="right"> <a href="<?php echo get_site_url().$goback_link; ?>">&larr; back </a></li>
+         <!-- <li class="right"> <a href="<?php echo get_site_url().$goback_link; ?>">&larr; back </a></li> -->
         </ul>
         <?php
 		// Start the loop.
