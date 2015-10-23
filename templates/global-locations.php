@@ -155,7 +155,7 @@ if(pll_current_language()=="en"){
                         {
                           ?>
                           <h3><?php echo $val->name; ?></h3>
-                           <?php if ($val->name =="Asia 亚洲") {?>
+                           <?php if ($val->name =="Asia 亚洲" || $val->name =="Asia") {?>
                            	
                 	<li class="single-languagelink ">
 					<?php dynamic_sidebar("header-sidebar-1"); ?>
