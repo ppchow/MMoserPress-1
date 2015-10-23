@@ -68,10 +68,12 @@
 		        	 		$followUs_text = "Follow us: ";
 		        	 		$nav_menu = wp_nav_menu(array('theme_location'=>'main', 'menu'=>'main_menu', 'menu_class' => 'right', 'walker' => $walker ,'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',)); 
 	                    	echo $nav_menu;
+							$title_text= "M Moser Associates";
 		        	 	}else{
 		        	 		$followUs_text = "关注我们";
 		        	 		$nav_menu = wp_nav_menu(array('theme_location'=>'main', 'menu'=>'main_menu_chines', 'menu_class' => 'right', 'walker' => $walker ,'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',)); 
 	                    	echo $nav_menu;
+							$title_text= "欢迎点击这里访问穆氏中文主页";
 		        	 	}
 	                    
 	                ?>
@@ -82,7 +84,7 @@
 		    <div id="header" class="hide-for-small">
 		      <div class="row">
 		        <div class="medium-6 medium-push-6 columns">
-		          <div class="logo"><a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mmoser-logo.png" alt="M Moser Associates" width="340" height="51"></a></div>
+		          <div class="logo"><a title="<?php echo $title_text; ?>" href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mmoser-logo.png" alt="<?php echo $title_text;?>" width="340" height="51"></a></div>
 		        </div>
 		        <div class="medium-6 medium-pull-6 columns">
 		        	<?php if(pll_current_language()=="cn"){ ?>
