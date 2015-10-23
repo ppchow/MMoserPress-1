@@ -24,7 +24,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 
 	// Fastclick removes the 300ms delay on click events in mobile environments. Must be placed in header. (Not required).
 	wp_enqueue_script( 'fastclick', get_template_directory_uri() . '/assets/javascript/vendor/fastclick.js', array(), '1.0.0', false );
-
+	
+	 wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/javascript/foundation.js', array('jquery'), '5.5.2', true );
+	
 	wp_enqueue_script( 'mmosercustom', get_template_directory_uri() . '/assets/javascript/custom/mmoser-custom.js', array('jquery'), '5.5.2', true );
 	
 	// CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
@@ -32,7 +34,6 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to Gruntfile.js and see lines 67-88.
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
-	 wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/javascript/foundation.js', array('jquery'), '5.5.2', true );
 	
 	
 
