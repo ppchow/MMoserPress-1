@@ -21,7 +21,7 @@ if(pll_current_language()=="en"){
     <div class="large-12 columns">
         <ul class="tabs-mm">
           <li><a href="<?php echo get_permalink(); ?>" class="active"><?php the_title();?></a></li>
-          <li class="right"> <a href="<?php echo $goback_link?>">&larr; back </a></li>
+        <!--  <li class="right"> <a href="<?php echo $goback_link?>">&larr; back </a></li> -->
         </ul>
         <div class="row">
 		

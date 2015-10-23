@@ -155,6 +155,13 @@ if(pll_current_language()=="en"){
                         {
                           ?>
                           <h3><?php echo $val->name; ?></h3>
+                           <?php if ($val->name =="Asia 亚洲") {?>
+                           	
+                	<li class="single-languagelink ">
+					<?php dynamic_sidebar("header-sidebar-1"); ?>
+					</li>
+					
+                		<?php } ?>
                           <?php
                           $type = 'location';
                           $args=array(
@@ -199,6 +206,7 @@ if(pll_current_language()=="en"){
                 <?php //dynamic_sidebar("footer-sidebar-2"); ?>
                 
                 <h3><?php echo $general_info_text0 ?></h3>
+               
                         <div class="row">
                           <div class="large-4 columns">
                             <ul class="vcard"> 

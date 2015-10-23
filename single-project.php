@@ -21,7 +21,8 @@ get_header();
 		<div class="large-12 columns projectpin">
 			<ul class="tabs-mm">
 	          <li><a href="<?php echo get_permalink() ?>" class="active"><?php echo $sel_project_text; ?></a></li>
-	          <li class="right"> <a href= "<?php echo get_site_url().$go_backlink; ?>">&larr; back</a></li>
+	          <!-- <li class="right"> <a href= "<?php echo get_site_url().$go_backlink; ?>">&larr; back</a></li> -->
+	          
 	        </ul>
 	        <?php $custom = get_post_custom(); //echo "<pre>",print_r(get_images_src('custom-full',true,$custom[thumbnail_id]));
 	        //echo "Post :".get_post_meta(get_the_ID(), 'miu_images', true);
@@ -40,6 +41,7 @@ get_header();
 							  <?php }
 								  ?>
 	                        </div>
+	                       
 		        		</div>
 		        		<div class="large-5 columns">
 	                    	<h2><?php echo the_title() ;?></h2>
