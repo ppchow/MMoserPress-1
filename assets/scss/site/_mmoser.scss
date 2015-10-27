@@ -286,6 +286,20 @@ ul.project-lang li a:hover{
   font-style: normal;
 }
 
+.single-languagelink{
+  padding-top:20px;
+  list-style: none outside none;
+}
+.single-languagelink ul{
+ list-style: none outside none;
+ margin-left:0px;
+ 
+}
+.single-languagelink .lang-item a{
+   font-size: 18px !important;
+  padding-top: 10px !important;
+  font-weight:normal;
+}
 
 .inline-list.social-links > li {
   font-size: 0.75rem;
@@ -2558,6 +2572,10 @@ ul.small > li { /*used in services-2.html ul li */
   .tabs.small dd > a, .tabs.small .tab-title > a {
     font-size: 0.75rem;
   }
+  
+  .single-languagelink .lang-item{
+    top:0px !important;
+  }
   /*TABS*/
 
   .blurb.gradient > h5 {
@@ -2571,7 +2589,13 @@ ul.small > li { /*used in services-2.html ul li */
   .filter > li {
     padding: 5px 10px;
   }
-
+  
+  .left-pane{
+    display:none;
+  }
+  .right-pane{
+    padding-left: 0px;
+  }
 }
 
 
