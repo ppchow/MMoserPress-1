@@ -297,7 +297,7 @@ blockquote.left, blockquote.right {
 
   .tabs-mm li {
     left: 0;
-    top: 59px;
+    top: 0px;
     position: relative;
   }
 
@@ -368,7 +368,7 @@ blockquote.left, blockquote.right {
   }
 
   .tabs-mm > li.right {
-    display: none;
+    //display: none;
   }
 
   .tabs-mm:not(.not) {
