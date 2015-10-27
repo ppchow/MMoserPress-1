@@ -2571,7 +2571,13 @@ ul.small > li { /*used in services-2.html ul li */
   .filter > li {
     padding: 5px 10px;
   }
-
+  
+  .left-pane{
+    display:none;
+  }
+  .right-pane{
+    padding-left: 0px;
+  }
 }
 
 
