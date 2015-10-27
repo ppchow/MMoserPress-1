@@ -2773,15 +2773,13 @@ ul.small > li { /*used in services-2.html ul li */
   color: $white;
 }
 
-#header .followlink {
-    display: inline-block;
+ .followlink {
+    
     list-style: outside none none;
-    z-index: 9;
+   
     position: relative;
     margin: 0px;
-    left: 11px;
-    padding-bottom: 20px;
-    top: 64px;
+    padding-bottom: 30px;
 }
 ul.followlink > li {
   background:url("../images/header-link-img.jpg") no-repeat scroll -1px 7px;
