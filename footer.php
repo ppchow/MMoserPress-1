@@ -87,5 +87,20 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <?php wp_footer(); ?>
 <?php do_action('foundationpress_before_closing_body'); ?>
+<!-- Google Analytics Tracking code --> 
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-5138110-1', 'auto',{siteSpeedSampleRate: 100});
+      ga('require', 'linkid', 'linkid.js' , 'displayfeatures');
+      ga('send', 'pageview');
+
+    </script>
+
+   <!--ga('require', 'displayfeatures');-->
+   <!-- End of Google Analytics Tracking code -->
 </body>
 </html>
