@@ -2358,8 +2358,8 @@ ul.small > li { /*used in services-2.html ul li */
  ********************************************************************************** */
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-
+//@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (min-width: 40.063em) and (max-width: 51.25em) {
   .yale2 h3, div.text-right{    
     text-align: left !important;    
   }   
@@ -2591,10 +2591,10 @@ ul.small > li { /*used in services-2.html ul li */
   }
   
   .left-pane{
-    display:none;
+   display:none;
   }
   .right-pane{
-    padding-left: 0px;
+   padding-left: 0px;
   }
 }
 
