@@ -280,7 +280,12 @@ ul.project-lang li a:hover{
   position: relative;
   z-index: 9;
 }
-
+.cn-mainlink{
+    position: absolute;
+    top: 63px;
+    font-size: larger;
+    left: 26px;
+}
 .social-links i {
   text-transform: none;
   font-style: normal;
