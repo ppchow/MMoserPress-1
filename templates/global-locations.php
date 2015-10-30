@@ -15,7 +15,7 @@ if(pll_current_language()=="en"){
   $general_info_text2_label = "Business Enquiries";
   $general_info_text2 = "Please refer to the appropriate office location page for direct contact details";
   $general_info_text3_label = "Job enquiries";
-  $general_info_text3 = "Please go to the <a href='careers'><strong>Careers page</strong></a> or email us at <a href='mailto:careers@mmoser.com'>careers@mmoser.com</a>";
+  $general_info_text3 = "Please go to the <a href='../careers'><strong>Careers page</strong></a> or email us at <a href='mailto:careers@mmoser.com'>careers@mmoser.com</a>";
   $general_info_text4_label = "Media Enquiries";
   $general_info_text4 = "please email us at <a href='mailto:pr@mmoser.com'>pr@mmoser.com</a>";
 
@@ -65,7 +65,7 @@ if(pll_current_language()=="en"){
   $general_info_text2_label = "业务咨询";
   $general_info_text2 = "业务咨询, 请访问我们的 全球分布页面，了解具体信息。";
   $general_info_text3_label = "就业机会";
-  $general_info_text3 = "请前往  <a href='careers'><strong>招贤纳才</strong></a> or email us at <a href='mailto:careers@mmoser.com'>careers@mmoser.com</a>";
+  $general_info_text3 = "请前往  <a href='../careers'><strong>招贤纳才</strong></a> or email us at <a href='mailto:careers@mmoser.com'>careers@mmoser.com</a>";
   $general_info_text4_label = "媒体合作";
   $general_info_text4 = "请电邮至 <a href='mailto:pr@mmoser.com'>pr@mmoser.com</a>";
 
