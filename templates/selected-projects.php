@@ -92,8 +92,8 @@ if(pll_current_language()=="en"){
                                           <?php //echo get_the_post_thumbnail($my_query->ID);
                                             $image_url = wp_get_attachment_url( get_post_thumbnail_id($my_query->ID));
                                           ?>
-                                          <!-- <img alt="<?php the_title() ?>" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-loader.gif" data-original="<?php echo $image_url ?>" class="lazy"> -->
-                                      		<img alt="<?php the_title() ?>" src="<?php echo $image_url ?>" >
+                                          <img alt="<?php the_title() ?>" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-loader.gif" data-original="<?php echo $image_url ?>" class="lazy"> 
+                                      		<!-- <img alt="<?php the_title() ?>" src="<?php echo $image_url ?>" > -->
                                       
                                       </a>
                                     </div>
