@@ -104,6 +104,9 @@ Stephen Band */
 // Yale Project
 $(window).load(function(){
   $("#container1").twentytwenty();
+  
+  
+  
 });
 
 //  [[*id:is=`1`:then=`[[$isotopeHome]]`]] Home Page
@@ -267,13 +270,11 @@ $(document).ready(function(){
      $( function() {
 
       // init Isotope
+     
+      
       var $container = $('.isotope').isotope({
         itemSelector: '.item'
-      });
-
-      // layout Isotope again after all images have loaded
-      $container.imagesLoaded( function() {
-        $container.isotope('layout');
+        
       });
 
       // store filter for each group
@@ -310,7 +311,8 @@ $(document).ready(function(){
 	// shared with Home Page and Awards Page
     $(function() {
       $("img.lazy").lazyload({
-        effect : "fadeIn"
+        effect : "fadeIn",
+        failure_limit: Math.max(this.length - 1, 0)
       });
     });
 
