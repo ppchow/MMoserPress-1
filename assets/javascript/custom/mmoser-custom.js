@@ -103,12 +103,9 @@ Stephen Band */
 
 // Yale Project
 $(window).load(function(){
-  $("#container1").twentytwenty();
-  
-  
-  
+  //$("#container1").twentytwenty();
 });
-
+	$("#container1").twentytwenty();
 //  [[*id:is=`1`:then=`[[$isotopeHome]]`]] Home Page
 
   // isotopeHome
