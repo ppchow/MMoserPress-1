@@ -109,9 +109,9 @@ get_header();
                                 <h4><?php the_title(); ?></h4>
 
                                 <?php echo get_the_post_thumbnail($mquery->ID) ?>
-
+								
                                 <!--<span class="label">Published in <b><i><?php echo $custom['publish'][0] ?></i></b><?php echo " | ".get_the_date("F Y") ;?></span>-->
-                                <span class="label"><? echo $publish_label ?><b><i><?php echo $custom['publish'][0] ?></i></b><?php echo " | ".date ("F Y",strtotime($custom['media_date'][0])) ;?></span>
+                                <span class="label"><?php echo $publish_label." "?><b><i><?php echo $custom['publish'][0] ?></i></b><?php echo " | ".date ("F Y",strtotime($custom['media_date'][0])) ;?></span>
                                 <?php  echo ($custom["shortdescription"][0]!="")? "<p>".$custom["shortdescription"][0]."</p>":"" ;?>
                               </a>
                               <a href="<?php echo get_permalink();?>" class="button"><?php echo $readmore_text ?></a>
