@@ -11,11 +11,24 @@
  */
 
 if ( ! function_exists( 'foundationpress_scripts' ) ) :
+	function third_party_tracking_code() { ?>
+
+		<script type="text/javascript" src="http://pass-1234.com/js/19182.js"></script>
+		<noscript><img src="http://pass-1234.com/19182.png" style="display:none;"/></noscript>
+		
+		<script type="text/javascript">
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-5138110-1']);
+	    _gaq.push(['_trackPageview']);
+	  </script>
+  
+<?php }
+
+
+
 	function foundationpress_scripts() {
 
-	// Enqueue the main Stylesheet.
-	wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/assets/stylesheets/foundation.css' );
-
+	
 	// Deregister the jquery version bundled with WordPress.
 	wp_deregister_script( 'jquery' );
 
@@ -28,6 +41,10 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	 wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/javascript/foundation.js', array('jquery'), '5.5.2', true );
 	
 	wp_enqueue_script( 'mmosercustom', get_template_directory_uri() . '/assets/javascript/custom/mmoser-custom.js', array('jquery'), '5.5.2', true );
+	
+	// Enqueue the main Stylesheet.
+	wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/assets/stylesheets/foundation.css' );
+	
 	
 	// CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
 	wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), '2.1.0', false );
@@ -43,7 +60,8 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	}
 
 	}
-
+	
+	add_action( 'wp_enqueue_scripts', 'third_party_tracking_code' );
 	add_action( 'wp_enqueue_scripts', 'foundationpress_scripts' );
 endif;
 

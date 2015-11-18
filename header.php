@@ -23,11 +23,6 @@
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-precomposed.png">
 		
 		<?php wp_head(); ?>
-		
-		<!-- Lead Forensics Tracking code -->
-		<script type="text/javascript" src="http://pass-1234.com/js/19182.js"></script>
-		<noscript><img src="http://pass-1234.com/19182.png" style="display:none;"/></noscript>
-		<!-- end of Lead Forensics Tracking code -->
 	</head>
 	<body <?php body_class(); ?>>
 
