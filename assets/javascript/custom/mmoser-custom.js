@@ -106,6 +106,8 @@ $(window).load(function(){
 	//$("#yalecontent").hide();
   $("#container1").twentytwenty();
 });
+
+$('.openthis').click( function() {  $("#container1").twentytwenty(); return false; } );
 	//$("#container1").twentytwenty();
 //  [[*id:is=`1`:then=`[[$isotopeHome]]`]] Home Page
 
