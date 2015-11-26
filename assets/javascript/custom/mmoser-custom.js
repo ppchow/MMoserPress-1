@@ -103,9 +103,10 @@ Stephen Band */
 
 // Yale Project
 $(window).load(function(){
-  //$("#container1").twentytwenty();
+	//$("#yalecontent").hide();
+  $("#container1").twentytwenty();
 });
-	$("#container1").twentytwenty();
+	//$("#container1").twentytwenty();
 //  [[*id:is=`1`:then=`[[$isotopeHome]]`]] Home Page
 
   // isotopeHome
@@ -443,7 +444,7 @@ $(document).ready(function(){
   */
 
   $(window).load(function(){
-  	$("#yalecontent").hide();
+  	//$("#yalecontent").hide();
   	//$("#readright").attr("href", "javascript:void(0);")
   });
   $(".openthis").click(function(){
