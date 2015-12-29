@@ -189,7 +189,7 @@ $(document).ready(function(){
       closeClick  : false,
       openEffect  : 'none',
       closeEffect : 'none'
-    }).trigger('click');
+    });
 
 	
     // fancyboxScripts
@@ -405,7 +405,7 @@ $(document).ready(function(){
 
    // https://css-tricks.com/snippets/jquery/smooth-scrolling/
    $(function() {
-     $('a[href*=#]:not([href=#])').click(function() {
+     $('a[href*=#s]:not([href=#s])').click(function() {
        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
          var target = $(this.hash);
          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
