@@ -33,7 +33,7 @@
 		           			$title = get_the_title();
 		           			$post_link = get_permalink();
 		           		}
-		           		if($post_type=="project" || $post_type=="news" || $pageid=='111' || $pageid=='865' || $pageid=='117' || $pageid=='834' ) {
+		           		if($post_type=="project" || $pageid=='111' || $pageid=='865' || $pageid=='117' || $pageid=='834' ) {
 		           		?>
 			          		<a href="#" data-dropdown="drop1">Share <i class="icon-paperplane"></i></a>
 						    <ul id="drop1" class="f-dropdown" data-dropdown-content>
