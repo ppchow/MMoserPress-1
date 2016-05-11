@@ -228,7 +228,6 @@ $(document).ready(function(){
     
      $(".fancyAlbum").fancybox({
       maxHeight : 600,
-      fitToView : false,
       width   : '70%',
       height    : 'auto',
       autoSize  : true,
