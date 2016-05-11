@@ -87,10 +87,13 @@
 		          <div class="logo"><a title="<?php echo $title_text; ?>" href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mmoser-logo-35th.png" alt="<?php echo $title_text;?>" width="500" height="80"></a></div>
 		        </div>
 		        <div class="medium-6 medium-pull-6 columns">
+		        	<div style="position: absolute;top: 10px;font-size: larger;left: 26px;z-index: 1;">
+		        		<a style="color:#ff7211" href="<?php echo get_bloginfo('url'); ?>/event"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/35thevent.png" /><span style="position: absolute;padding-top: 9px;width: 312px;">35th anniversary event photo album</span></a>
+	        		</div>
 		        	<?php if(pll_current_language()=="cn"){ ?>
 		        	
 		        			<div class="cn-mainlink">
-		        			<a href="http://mmoser.com">Main website</a>
+		        				<a href="http://mmoser.com">Main website</a>
 		        			</div> 
 		        	<?php } ?>
 		        	<!--<ul class="followlink">

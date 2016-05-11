@@ -12,12 +12,16 @@ get_header();
           $in_media = "In the Media";
           $in_media_link = "in-the-media/";
           $news_text = "news/";
+		  $event = "35th Anniversary";
+		  $event_link = "event/";
           $readmore_text = "Read More";
           $go_to_top = "Go to top";
       }else{
           $in_media = "媒体报道";
           $news_text = "cn/news/";
           $in_media_link = "cn/in-the-media/";
+		  $event = "35th Anniversary";
+		  $event_link = "event/";
           $readmore_text = "阅读全文";
           $go_to_top = "返回頁首";
       }
@@ -50,6 +54,7 @@ get_header();
         }
         ?>
           <li><a href="<?php echo get_site_url().'/'.$in_media_link; ?>"><?php echo $in_media ?></a></li>
+          <li><a href="<?php echo get_site_url().'/'.$event_link; ?>"><?php echo $event ?></a></li>
           <li></li>
 
         </ul>

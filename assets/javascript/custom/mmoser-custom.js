@@ -225,6 +225,17 @@ $(document).ready(function(){
       openEffect  : 'none',
       closeEffect : 'none'
     });
+    
+     $(".fancyAlbum").fancybox({
+      maxHeight : 600,
+      fitToView : false,
+      width   : '70%',
+      height    : 'auto',
+      autoSize  : true,
+      closeClick  : false,
+      openEffect  : 'none',
+      closeEffect : 'none'
+    });
 
   // END isotopeIdea
 
