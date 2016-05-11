@@ -82,7 +82,7 @@ $term = get_term_by('id', $catid, 'media_year');
                     }
                     ?>
                     <li><a href="<?php echo get_term_link($value->slug, 'media_year'); ?>" class="<?php echo $classes ?>"><?php echo $value->name ; ?></a></li>
-                    <li><a href="<?php echo get_site_url().'/'.$event_link; ?>"><?php echo $event ?></a></li>
+                    <!-- <li><a href="<?php echo get_site_url().'/'.$event_link; ?>"><?php echo $event ?></a></li> -->
                     <?php
                     $k++;
                   }
