@@ -233,7 +233,8 @@ $(document).ready(function(){
       autoSize  : true,
       closeClick  : false,
       openEffect  : 'none',
-      closeEffect : 'none'
+      closeEffect : 'none',
+      loop : false
     });
 
   // END isotopeIdea
