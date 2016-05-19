@@ -490,6 +490,7 @@ button.slick-next:hover .slick-prev:before{
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
   background-image: url('fancybox_sprite.png');
+  visibility:visible !important;
 }
 
 #fancybox-loading {
@@ -548,7 +549,7 @@ button.slick-next:hover .slick-prev:before{
   margin-top: -18px;
   cursor: pointer;
   z-index: 8040;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .fancybox-prev span {
@@ -572,7 +573,7 @@ button.slick-next:hover .slick-prev:before{
   visibility: hidden;
   max-width: 99999px;
   max-height: 99999px;
-  overflow: visible !important;
+  overflow: visible;
 }
 
 /* Overlay helper */

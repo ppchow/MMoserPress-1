@@ -2611,6 +2611,7 @@ ul.small > li { /*used in services-2.html ul li */
 // FancyBox show arrow 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
   visibility:visible;
+  display:block;
 }
 
 
