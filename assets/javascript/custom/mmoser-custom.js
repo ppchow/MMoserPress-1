@@ -234,7 +234,8 @@ $(document).ready(function(){
       closeClick  : false,
       openEffect  : 'none',
       closeEffect : 'none',
-      loop : false
+      loop : false,
+      arrows: true
     });
 
   // END isotopeIdea
