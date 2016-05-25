@@ -11,11 +11,15 @@ get_header();
       if(pll_current_language()=="en"){
           $in_media = "In the Media";
           $media_link = "/in-the-media/";
+		  $event = "35th Anniversary";
+		  $event_link = "event/";
           $readmore_text = "Read More";
 		  $publish_label = "Published in";
       }else{
           $in_media = "媒体报道";
           $media_link = "/cn/in-the-media/";
+		  $event = "35th Anniversary";
+		  $event_link = "event/";
           $readmore_text = "阅读全文";
 		  $publish_label = "刊登于";
       }
@@ -40,6 +44,7 @@ get_header();
           }
           ?>
           <li><a href="<?php echo get_site_url().$media_link; ?>" class="active"><?php echo $in_media?></a></li>
+          <li><a href="<?php echo get_site_url().'/'.$event_link; ?>"><?php echo $event ?></a></li>
           <li></li>
         </ul>
         <?php
@@ -109,9 +114,9 @@ get_header();
                                 <h4><?php the_title(); ?></h4>
 
                                 <?php echo get_the_post_thumbnail($mquery->ID) ?>
-
+								
                                 <!--<span class="label">Published in <b><i><?php echo $custom['publish'][0] ?></i></b><?php echo " | ".get_the_date("F Y") ;?></span>-->
-                                <span class="label"><? echo $publish_label ?><b><i><?php echo $custom['publish'][0] ?></i></b><?php echo " | ".date ("F Y",strtotime($custom['media_date'][0])) ;?></span>
+                                <span class="label"><?php echo $publish_label." "?><b><i><?php echo $custom['publish'][0] ?></i></b><?php echo " | ".date ("F Y",strtotime($custom['media_date'][0])) ;?></span>
                                 <?php  echo ($custom["shortdescription"][0]!="")? "<p>".$custom["shortdescription"][0]."</p>":"" ;?>
                               </a>
                               <a href="<?php echo get_permalink();?>" class="button"><?php echo $readmore_text ?></a>

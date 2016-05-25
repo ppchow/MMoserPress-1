@@ -103,12 +103,12 @@ Stephen Band */
 
 // Yale Project
 $(window).load(function(){
+	//$("#yalecontent").hide();
   $("#container1").twentytwenty();
-  
-  
-  
 });
 
+$('.openthis').click( function() {  $("#container1").twentytwenty(); return false; } );
+	//$("#container1").twentytwenty();
 //  [[*id:is=`1`:then=`[[$isotopeHome]]`]] Home Page
 
   // isotopeHome
@@ -189,7 +189,7 @@ $(document).ready(function(){
       closeClick  : false,
       openEffect  : 'none',
       closeEffect : 'none'
-    }).trigger('click');
+    });
 
 	
     // fancyboxScripts
@@ -224,6 +224,18 @@ $(document).ready(function(){
       closeClick  : false,
       openEffect  : 'none',
       closeEffect : 'none'
+    });
+    
+     $(".fancyAlbum").fancybox({
+      maxHeight : 600,
+      width   : '70%',
+      height    : 'auto',
+      autoSize  : true,
+      closeClick  : false,
+      openEffect  : 'none',
+      closeEffect : 'none',
+      loop : false,
+      arrows: true
     });
 
   // END isotopeIdea
@@ -405,7 +417,7 @@ $(document).ready(function(){
 
    // https://css-tricks.com/snippets/jquery/smooth-scrolling/
    $(function() {
-     $('a[href*=#]:not([href=#])').click(function() {
+     $('a[href*=#s]:not([href=#s])').click(function() {
        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
          var target = $(this.hash);
          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -446,7 +458,7 @@ $(document).ready(function(){
   */
 
   $(window).load(function(){
-  	$("#yalecontent").hide();
+  	//$("#yalecontent").hide();
   	//$("#readright").attr("href", "javascript:void(0);")
   });
   $(".openthis").click(function(){

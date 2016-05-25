@@ -22,11 +22,6 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-precomposed.png">
 		
-		<!-- Lead Forensics Tracking code -->
-		<script type="text/javascript" src="http://pass-1234.com/js/19182.js"></script>
-		<noscript><img src="http://pass-1234.com/19182.png" style="display:none;"/></noscript>
-		<!-- end of Lead Forensics Tracking code -->
-		
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -89,13 +84,16 @@
 		    <div id="header" class="hide-for-small">
 		      <div class="row">
 		        <div class="medium-6 medium-push-6 columns">
-		          <div class="logo"><a title="<?php echo $title_text; ?>" href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mmoser-logo.png" alt="<?php echo $title_text;?>" width="340" height="51"></a></div>
+		          <div class="logo"><a title="<?php echo $title_text; ?>" href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mmoser-logo-35th.png" alt="<?php echo $title_text;?>" width="500" height="80"></a></div>
 		        </div>
 		        <div class="medium-6 medium-pull-6 columns">
+		        	<div style="position: absolute;top: 10px;font-size: larger;left: 26px;z-index: 1;">
+		        		<a style="color:#ff7211" href="<?php echo get_bloginfo('url'); ?>/event"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/35thevent.png" /><span style="position: absolute;padding-top: 9px;width: 312px;">35th anniversary event photo album</span></a>
+	        		</div>
 		        	<?php if(pll_current_language()=="cn"){ ?>
 		        	
 		        			<div class="cn-mainlink">
-		        			<a href="http://mmoser.com">Main website</a>
+		        				<a href="http://mmoser.com">Main website</a>
 		        			</div> 
 		        	<?php } ?>
 		        	<!--<ul class="followlink">

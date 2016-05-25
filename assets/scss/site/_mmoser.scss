@@ -532,7 +532,7 @@ header{
 .logo img {
   position: absolute;
   right: 0;
-  top: 27px;
+  top: 22px;
 }
 
 #header h1 {
@@ -2214,6 +2214,10 @@ area{
 .has-tip {    
   border-bottom-style: none !important;   
 }   
+
+.album{
+  margin-bottom:8px;
+}
 /* Desktops and laptops ----------- ************************************************    
 *                                                                                  *    
 *                                                                                  *    
@@ -2604,7 +2608,11 @@ ul.small > li { /*used in services-2.html ul li */
   }
 }
 
-
+// FancyBox show arrow 
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
+  visibility:visible;
+  display:block;
+}
 
 
 /* Desktops and laptops ----------- ************************************************
@@ -3205,7 +3213,9 @@ ul.lang {
   -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
   box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
   z-index: 40;
-  cursor: ew-resize; }
+  cursor: ew-resize;
+  background-color: #ff7211;
+   }
 
 .twentytwenty-horizontal .twentytwenty-handle:before {
   bottom: 50%;
