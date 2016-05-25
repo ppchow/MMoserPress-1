@@ -71,7 +71,7 @@ if(pll_current_language()=="en"){
                                 $my_query = new WP_Query($args);
                                 if( $my_query->have_posts() ) {
                                   ?>
-                                 <ul class="small-block-grid-3">
+                                 <ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-3">
                                   <?php
                                   $i=1;
                                   while ($my_query->have_posts()) : $my_query->the_post(); ?>
@@ -90,9 +90,14 @@ if(pll_current_language()=="en"){
                                              
                                           </div>
                                           <?php //echo get_the_post_thumbnail($my_query->ID);
-                                            $image_url = wp_get_attachment_url( get_post_thumbnail_id($my_query->ID));
+
+                                            $image_url = wp_get_attachment_url( get_post_thumbnail_id($my_query->ID) );
+
+                                            $proj_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($my_query->ID), 'large' );
+
+
                                           ?>
-                                          <img alt="<?php the_title() ?>" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-loader.gif" data-original="<?php echo $image_url ?>" class="lazy"> 
+                                          <img alt="<?php the_title() ?>" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-loader.gif" data-original="<?php echo $image_url ?>" class="lazy" width="<?php echo $proj_image_url[1]; ?>" height="<?php echo $proj_image_url[2]; ?>"> 
                                           <!-- <img alt="<?php the_title() ?>" src="<?php echo $image_url ?>" > -->
                                       
                                       </a>
