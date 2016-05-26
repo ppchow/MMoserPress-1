@@ -15,7 +15,7 @@ if(pll_current_language()=="en"){
   $location_text = "地点";
 }
 ?>
-		<div class="row">
+    <div class="row">
             <div class="large-12 columns">
                 <ul class="tabs-mm">
                     <li><a class="active"><?php the_title(); ?></a></li>
@@ -71,7 +71,7 @@ if(pll_current_language()=="en"){
                                 $my_query = new WP_Query($args);
                                 if( $my_query->have_posts() ) {
                                   ?>
-                                  <div class="isotope" style="position: relative;">
+                                 <ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-3">
                                   <?php
                                   $i=1;
                                   while ($my_query->have_posts()) : $my_query->the_post(); ?>
@@ -80,7 +80,7 @@ if(pll_current_language()=="en"){
                                     $terms = get_the_terms($post->ID,'project_location');
                                     // echo $terms{0}->slug;
                                     ?>
-                                    <div class="item g1 <?php  echo $terms{0}->slug  ?>">
+                                     <li>
                                       <a href="<?php echo get_permalink() ?>" class="whole-div">
                                           <div class="blurb gradient">
                                             <h6><?php echo $custom["sq_ft"][0]; echo (pll_current_language()=="en")?' sq-ft':''; ?></h6>
@@ -90,18 +90,23 @@ if(pll_current_language()=="en"){
                                              
                                           </div>
                                           <?php //echo get_the_post_thumbnail($my_query->ID);
-                                            $image_url = wp_get_attachment_url( get_post_thumbnail_id($my_query->ID));
+
+                                            $image_url = wp_get_attachment_url( get_post_thumbnail_id($my_query->ID) );
+
+                                            $proj_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($my_query->ID), 'large' );
+
+
                                           ?>
-                                          <img alt="<?php the_title() ?>" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-loader.gif" data-original="<?php echo $image_url ?>" class="lazy"> 
-                                      		<!-- <img alt="<?php the_title() ?>" src="<?php echo $image_url ?>" > -->
+                                          <img alt="<?php the_title() ?>" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-loader.gif" data-original="<?php echo $image_url ?>" class="lazy" width="<?php echo $proj_image_url[1]; ?>" height="<?php echo $proj_image_url[2]; ?>"> 
+                                          <!-- <img alt="<?php the_title() ?>" src="<?php echo $image_url ?>" > -->
                                       
                                       </a>
-                                    </div>
+                                    </li>
                                     <?php
                                     $i++;
                                   endwhile;
                                   ?>
-                                  </div>
+                                  </ul>
                                   <?php
                                 }
                                 wp_reset_query();  // Restore global post data stomped by the_post().
