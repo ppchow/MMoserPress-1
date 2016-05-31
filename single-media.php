@@ -13,8 +13,12 @@ get_header(); ?>
               	<?php 
               	if(pll_current_language()=="en"){
 				  $in_media = "In the Media";
+				  $event = "35th Anniversary";
+		          $event_link = "event/";
 				}else{
 				  $in_media = "媒体报道";
+				  $event = "35th Anniversary";
+		          $event_link = "event/";
 				}
               	$custom = get_post_custom();
 	        	
@@ -48,6 +52,7 @@ get_header(); ?>
 			        }
 			        ?>
 			          <li><a href="<?php echo get_bloginfo('url').'/in-the-media/' ?>" class="active"><?php echo $in_media; ?></a></li>
+			          <li><a href="<?php echo get_site_url().'/'.$event_link; ?>"><?php echo $event ?></a></li>
 			         <!-- <li class="right"> <a href="<?php echo get_site_url().'/in-the-media/'.$media_cat; ?>">← back </a></li> -->
 			        </ul>
 			        <?php

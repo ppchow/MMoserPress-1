@@ -14,9 +14,13 @@ get_header(); ?>
               	if(pll_current_language()=="en"){
 				  $in_media = "In the Media";
 				  $in_media_link = "in-the-media/";
+				  $event = "35th Anniversary";
+		          $event_link = "event/";
 				}else{
 				  $in_media = "媒体报道";
 				  $in_media_link = "cn/in-the-media/";
+				  $event = "35th Anniversary";
+		 			$event_link = "event/";
 				}
 				$terms = get_the_terms($post->ID,'news_category');
 				$news_cat = $terms{0}->slug;
@@ -43,6 +47,7 @@ get_header(); ?>
 			        }
 			        ?>
 			          <li><a href="<?php echo get_site_url().'/'.$in_media_link; ?>"><?php echo $in_media ?></a></li>
+			          <li><a href="<?php echo get_site_url().'/'.$event_link; ?>"><?php echo $event ?></a></li>
                      <!-- <li class="right"> <a href="<?php echo get_term_link($news_cat, 'news_category'); ?>">&larr; back</a></li> -->
 			        
 			        </ul>
